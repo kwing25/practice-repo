@@ -1,0 +1,41 @@
+<div class="container" id="profile-page">
+
+<header class="align-content-center">
+                    <h4>Account Page</h4>
+                </header>
+
+                <div class="container">
+                    <div class="row">
+
+                        {{!-- <div class="col-lg-6">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+
+                                </div>
+                                <input type="text" class="form-control note-save"
+                                    placeholder="Save some notes about your Drinks!"
+                                    aria-label="Example text with button addon" aria-describedby="button-addon1"><button
+                                    class="btn btn-outline-secondary" type="button" id="noteSaveButtonThisIs">Save
+                                    Note</button>
+                            </div>
+                        </div> --}}
+                        <div class="col-lg-6">My Cocktails
+                            <div class="list-group">
+                                {{!-- {{#each notes}}
+                                    <p>{{note_description}}</p>
+                                {{/each}} --}}
+
+                                <div class="drink-name">
+                                {{#each saveddrinks}}
+                                    <button>{{drink_name}}</button>
+                                    <button class="delete-button" data-id="{{id}}">delete</button>
+                                {{/each}}
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+</div>
+
+<script src="/js/profile.js"></script>

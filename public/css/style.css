@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Comfortaa:wght@300;400;500;600;700&family=Fredericka+the+Great&family=Limelight&family=Original+Surfer&family=Poiret+One&family=Special+Elite&display=swap');
+@import url('../node_modules/font-awesome/css/font-awesome.min.css');
+@import url("hover.css");
+
+/* header,
+.project:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+} */
+
+
+/* Main */
+
+#mainpage {
+  width: 100vw;
+  height: 100vh;
+}
+
+.main {
+  font-family: 'Abel', sans-serif;
+  background-color: #f3cd05;
+  animation: pulse 5s;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #f3cd05;
+  }
+
+  100% {
+    background-color: #f18904;
+  }
+}
+
+
+header#DrinkAppHeader.display-flex.align-center.p-2 {
+  background-color: #f49f05;
+}
+
+
+
+h1#websiteheader a {
+  color: #1b89bc;
+  font-size: 50px;
+  font-family: 'Original Surfer', cursive;
+  text-decoration: none;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+
+#mainsitenav a {
+  color: #000;
+  text-decoration: none;
+}
+
+#mainsitenav a:hover {
+  color: #1b89bc;
+  /* font-family: 'Limelight', cursive; */
+  font-size: 1.2em;
+  letter-spacing: 3px;
+  line-height: .75em;
+  text-decoration: none;
+
+}
+
+/* #mainsitenav a::before {
+  content: '';
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/chris.jpg');
+  background-position: 0 30%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100vh;
+  left: 0;
+  position: absolute;
+  bottom: 0vh;
+  width: 100vw;
+  transform: translateY(100%);
+  transition: transform .3s;
+}
+
+#mainsitenav a:hover::before {
+  transform: translateY(0px);
+} */
+
+* Bottom Nav */ nav.bottom-nav {
+  background-color: #065b83;
+  width: 100%;
+}
+
+ul.navbar {
+  list-style-type: none;
+  justify-content: flex-start;
+
+}
+
+li.nav-item a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+li.nav-item a:hover {
+  color: #f49f05;
+  text-decoration: none;
+}
+
+.no-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: #1b89bc;
+  text-decoration: none;
+  font-size: 100%;
+}
+
+.no-button:hover {
+  color: #065b83;
+  text-decoration: underline;
+}
+
+
+/* Homepage */
+
+div.jumbotron {
+  display: flex;
+  padding-bottom: 2px;
+  margin: 1px;
+  background: url("https://www.publicdomainpictures.net/pictures/30000/nahled/drink-on-beach.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  border-radius: 5px;
+}
+
+div#lets-grab-a-drink.container {
+  min-height: 400px;
+  padding: 17px;
+  margin: 3px;
+}
+
+
+
+button#logout.no-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: #1b89bc;
+  text-decoration: none;
+  font-size: 100%;
+}
+
+.no-button:hover {
+  color: #065b83;
+  text-decoration: underline;
+  font-style: initial;
+}
+
+
+.display-4 {
+  color: whitesmoke;
+  text-shadow: 0 2px 3px black;
+}
+
+label {
+  text-shadow: 0 1px 3px black;
+}
+
+label:hover {
+  color: black;
+}
+
+/* Cocktail of the Day/Favorites Cards */
+div.row {
+  padding: 18px;
+  justify-content: center;
+}
+
+
+div#wildcardcocktailsection.col-lg-6 {
+  height: 100vh;
+  background: url("https://cdn.stocksnap.io/img-thumbs/960w/sparks-sparkler_L6BUD1V0U3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 5px;
+  padding: 25px;
+  justify-content: space-around;
+  padding: 30px;
+  margin-right: 40px;
+}
+
+div#ourfavoritessection.col-lg-6 {
+  height: 100vh;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/7/7f/Sea_blue_yellow_sun.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 5px;
+  padding: 25px;
+  margin-left: 30px;
+}
+
+.drink-card {
+  justify-content: center;
+}
+
+.drink-image-home {
+  max-height: 300px;
+  max-width: 300px;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.drink-image-home-1 {
+  max-height: 300px;
+  max-width: 300px;
+  border-radius: 10px;
+  padding: 3px;
+}
+
+.drink-image-home-2 {
+  max-height: 300px;
+  max-width: 300px;
+  border-radius: 10px;
+  padding: 3px;
+}
+
+.drink-image-home-3 {
+  max-height: 300px;
+  max-width: 300px;
+  border-radius: 10px;
+  padding: 3px;
+}
+
+.drink-image-home-4 {
+  max-height: 300px;
+  max-width: 300px;
+  border-radius: 10px;
+  padding: 3px;
+}
+
+.drink-image {
+  max-height: 400px;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+h5.wildcard {
+  font-family: 'Fredericka the Great', cursive;
+  text-shadow: 0 0 3px black;
+  color: white;
+  font-size: 32px;
+  text-align: center;
+  padding: 2px;
+}
+
+p.drink-name-home {
+  font-family: 'Poiret One', cursive;
+  color: white;
+  text-shadow: 0 0 3px black;
+  font-size: 27px;
+  padding: 2px;
+}
+
+h5.favorites {
+  font-family: 'Poiret One', cursive;
+  color: white;
+  text-shadow: 0 0 3px black;
+  font-size: 27px;
+  padding: 2px;
+}
+
+p.drink-name-home-1 {
+  font-family: 'Poiret One', cursive;
+  color: white;
+  text-shadow: 0 0 3px black;
+  font-size: 27px;
+  padding: 2px;
+}
+
+p.drink-name-home-1:hover {
+  font-family: 'Poiret One', cursive;
+  color: white;
+  text-shadow: 0 0 3px black;
+  font-size: 27px;
+  padding: 2px;
+}
+
+p.drink-name-home-2 {
+  font-family: 'Poiret One', cursive;
+  color: white;
+  text-shadow: 0 0 3px black;
+  font-size: 27px;
+  padding: 2px;
+}
+
+p.drink-name-home-3 {
+  font-family: 'Poiret One', cursive;
+  color: white;
+  text-shadow: 0 0 3px black;
+  font-size: 27px;
+  padding: 2px;
+}
+
+p.drink-name-home-4 {
+  font-family: 'Poiret One', cursive;
+  color: white;
+  text-shadow: 0 0 3px black;
+  font-size: 27px;
+  padding: 2px;
+}
+
+/* Profile Page */
+/* div#profile-page {
+  background-color: #f3cd05;
+} */
+
+
+/* Login page */
+
+#loginpage {
+  width: 100vw;
+  height: 100vh;
+}
+
+
+/* Profile page */
+
+#profile {
+  width: 100vw;
+  height: 100vh;
+}
+
+
+
+/* Drink results page */
+
+#drinksearch {
+  width: 100vw;
+  height: 100vh;
+}
+
+.card-body {
+  width: fit-content;
+  height: fit-content;
+}
+
+div.drink-name li {
+  text-decoration: none;
+  list-style-type: decimal;
+}
+
+
+/* Drink individual page */
+
+#drinkindividualpage {
+  width: 100vw;
+  height: 100vh;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  img.drink-image {
+    max-height: 250px;
+  }
+}
+
+
+
+/* Fonts- */
+/* font-family: 'Abel', sans-serif;
+font-family: 'Comfortaa', cursive;
+font-family: 'Fredericka the Great', cursive;
+font-family: 'Limelight', cursive;
+font-family: 'Original Surfer', cursive;
+font-family: 'Poiret One', cursive;
+font-family: 'Special Elite', cursive; */
+
+.drink-name {
+  list-style: none;
+}
+
+.drink-name img {
+  max-height: 100px;
+}
+
+.drink-name button {
+  border: 2px solid #1b89bc;
+  border-radius: 4px;
+  background-color: #ccc;
+}
+
+button.delete-button {
+  border: none;
+  background: none;
+}
