@@ -1,3 +1,3 @@
-# practice1
+# Practice Repo
 
-I enjoy JavaScript because it utilizes both Functional programming and Object-oriented programming.
+A repo for practice purposes. Open to public.
